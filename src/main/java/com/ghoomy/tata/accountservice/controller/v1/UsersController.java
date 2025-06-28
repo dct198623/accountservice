@@ -3,9 +3,8 @@ package com.ghoomy.tata.accountservice.controller.v1;
 import com.ghoomy.tata.accountservice.dto.request.ForgotPasswordRequestDTO;
 import com.ghoomy.tata.accountservice.dto.request.LoginRequestDTO;
 import com.ghoomy.tata.accountservice.dto.request.SignupRequestDTO;
-import com.ghoomy.tata.accountservice.dto.response.ForgotPasswordResponseDTO;
-import com.ghoomy.tata.accountservice.dto.response.LoginResponseDTO;
-import com.ghoomy.tata.accountservice.dto.response.SignupResponseDTO;
+import com.ghoomy.tata.accountservice.dto.request.VerifyRequestDTO;
+import com.ghoomy.tata.accountservice.dto.response.*;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -36,5 +35,18 @@ public class UsersController {
         System.out.println(request.getAccount());
         return new ForgotPasswordResponseDTO("Verification code sent.", 3600);
     }
+
+    @PostMapping("/verify")
+    public VerifyResponseDTO verify(@RequestBody VerifyRequestDTO request) {
+        System.out.println(request.getAccount());
+        System.out.println(request.getVerifyCode());
+        return new VerifyResponseDTO("example@gmail.com");
+    }
+
+    @PutMapping("/information")
+    public InformationResponseDTO verify(@RequestParam int userId) {
+        return new InformationResponseDTO("王大東", "0987654321", "1995-08-20", "$2b$12$3vR4IhMw2rI3TUN97bXQcO", "4f9d4a8e-8b2f-11ee-b9d1-0242ac120002");
+    }
+
 
 }
