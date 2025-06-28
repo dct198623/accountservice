@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginRequestDTO {
+public class VerifyRequestDTO {
 
   private String account;
-  private String pwdHash;
+  private String verifyCode;
 
 }
