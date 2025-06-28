@@ -22,9 +22,11 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-
+	implementation ("org.springdoc:springdoc-openapi-starter-webmvc-ui:2.7.0")
 //	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
 //	runtimeOnly("com.mysql:mysql-connector-j")
+	compileOnly("org.projectlombok:lombok:1.18.30")
+	annotationProcessor("org.projectlombok:lombok:1.18.30")
 
 }
 

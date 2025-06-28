@@ -1,4 +1,4 @@
-package com.ghoomy.tata.accountservice.dto.request;
+package com.ghoomy.tata.accountservice.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginRequestDTO {
+public class SignupResponseDTO {
 
     private String account;
-    private String pwdHash;
-    
+
 }
