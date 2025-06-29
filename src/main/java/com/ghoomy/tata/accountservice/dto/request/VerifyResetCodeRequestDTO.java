@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class LoginRequestDTO {
+public class VerifyResetCodeRequestDTO {
 
     private String account;
-    private String password;
-    
+    private String code;
+
 }

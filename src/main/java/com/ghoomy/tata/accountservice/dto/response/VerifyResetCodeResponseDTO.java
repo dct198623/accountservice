@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class ForgotPasswordResponseDTO {
+public class VerifyResetCodeResponseDTO {
 
     private String message;
 
