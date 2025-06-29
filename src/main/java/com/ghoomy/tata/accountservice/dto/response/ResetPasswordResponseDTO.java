@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Schema(description = "驗證帳號")
-public class VerifyResponseDTO {
+@Schema(description = "重設密碼")
+public class ResetPasswordResponseDTO {
 
-    @Schema(description = "帳號", example = "example@gmail.com")
-    private String account;
+    @Schema(description = "重設密碼結果", example = "Reset successfully.")
+    private String message;
 
 }
