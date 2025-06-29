@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      enabled: false # 本地環境不連接 Config Server
+
+eureka:
+  client:
+    enabled: false # 本地環境不使用 Eureka
